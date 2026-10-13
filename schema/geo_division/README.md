@@ -54,7 +54,7 @@ sqlcmd -S localhost -d your_db -E -b -i schema/geo_division/mssql/002_seed_geo_d
 |---|---|---|---|
 | `country` | `CHAR(2)` | 否 | ISO 3166-1 alpha-2，如 `CN`、`US` |
 | `code` | `VARCHAR(32)` | 否 | 国内区划代码，同一国家内唯一 |
-| `code6` | `VARCHAR(16)` | 否 | 定长**排序键**；**不保证唯一**（直筒子市） |
+| `sort_key` | `VARCHAR(32)` | 否 | **国别排序键**（定长补齐等）；**不保证唯一**；空串表示无排序需求 |
 | `code_iso` | `VARCHAR(16)` | 是 | ISO 3166-2；**全局唯一**（部分唯一索引）；无则为 `NULL` |
 | `parent_code` | `VARCHAR(32)` | 是 | 同国上级 `code`；一级为 `NULL` |
 | `depth` | `SMALLINT` | 否 | 树深度：根=`1`，子=`父 depth + 1`（直辖市区县多为 `2`） |
@@ -83,7 +83,8 @@ US 当地名即英文 → 只填 `name_local`，`name_en` 空，州级中文进 
 
 1. **`depth` 是树深度，不是行政大档。** 直辖市区县 `depth=2`，普通省市区 `depth=3`；
    「是省还是区」看 `type`，不要用 `depth` 当省/市/县。
-2. **`code6` 不是唯一键。** 唯一键是 `(country, code)`。
+2. **`sort_key` 不是唯一键。** 唯一键是 `(country, code)`。CN/US 播种时由数据集
+   `code6` 映射而来；别国可自定补齐规则，或留空。
 3. **`type` 是细分类机读值。** CN 如 `municipality`、`province`、`district`；
    US 如 `state`、`parish`。解读必须带 `country`（两边都有 `district` 等词）。
    中文标签用应用侧小字典，或看 `cn-divisions` / `us-divisions` 的 `type_zh`，不入库。
@@ -93,7 +94,7 @@ US 当地名即英文 → 只填 `name_local`，`name_en` 空，州级中文进 
 
 ## 从本仓库导入的口径
 
-- `cn-divisions` → `country='CN'`；`depth` 由 `parent_code` 算出；`type` 原样落入（`type_zh` 不入库）
+- `cn-divisions` → `country='CN'`；`code6`→`sort_key`；`depth` 由 `parent_code` 算出；`type` 原样落入（`type_zh` 不入库）
 - `us-divisions` → `country='US'`；同上（`level` / `type_zh` / `capital_*` 不入库）
 
 ## 重建与自证

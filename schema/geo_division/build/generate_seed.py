@@ -35,7 +35,7 @@ SEED_COUNTRIES = ("CN", "US")
 COLS = [
     "country",
     "code",
-    "code6",
+    "sort_key",
     "code_iso",
     "parent_code",
     "depth",
@@ -85,7 +85,8 @@ def load_rows() -> list[dict]:
             {
                 "country": "CN",
                 "code": r["code"],
-                "code6": r["code6"],
+                # 数据集字段仍叫 code6；入库为国别无关的 sort_key
+                "sort_key": r.get("code6") or r["code"],
                 "code_iso": r.get("iso3166_2") or None,
                 "parent_code": r.get("parent_code") or None,
                 # 当地名即中文：只写入 name_local*，name_zh 留空避免双写
@@ -106,7 +107,7 @@ def load_rows() -> list[dict]:
             {
                 "country": "US",
                 "code": r["code"],
-                "code6": r["code6"],
+                "sort_key": r.get("code6") or r["code"],
                 "code_iso": r.get("iso3166_2") or None,
                 "parent_code": r.get("parent_code") or None,
                 # 当地名即英文：只写入 name_local，name_en 留空避免双写
@@ -121,7 +122,7 @@ def load_rows() -> list[dict]:
         )
 
     assign_depth(rows)
-    rows.sort(key=lambda r: (r["country"], r["code6"], r["code"]))
+    rows.sort(key=lambda r: (r["country"], r["sort_key"], r["code"]))
     return rows
 
 
@@ -158,13 +159,13 @@ def validate(rows: list[dict]) -> list[str]:
         raise SystemExit(f"code_iso 重复：{iso_dup[:5]}")
 
     notes = []
-    code6_dup = sorted(
-        k for k, v in Counter((r["country"], r["code6"]) for r in rows).items() if v > 1
+    sort_dup = sorted(
+        k for k, v in Counter((r["country"], r["sort_key"]) for r in rows).items() if v > 1
     )
-    if code6_dup:
+    if sort_dup:
         notes.append(
-            f"code6 不唯一（已知现象，直筒子市级/县级同名行）：{len(code6_dup)} 组 "
-            + ", ".join(f"{c}/{k}" for c, k in code6_dup[:5])
+            f"sort_key 不唯一（已知现象，直筒子市等同键多行）：{len(sort_dup)} 组 "
+            + ", ".join(f"{c}/{k}" for c, k in sort_dup[:5])
         )
     return notes
 

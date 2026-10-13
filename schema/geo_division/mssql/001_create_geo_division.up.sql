@@ -22,7 +22,7 @@ BEGIN
     CREATE TABLE dbo.geo_division (
         country          CHAR(2)        NOT NULL,
         code             NVARCHAR(32)   NOT NULL,
-        code6            NVARCHAR(16)   NOT NULL CONSTRAINT DF_geo_division_code6 DEFAULT (N''),
+        sort_key         NVARCHAR(32)   NOT NULL CONSTRAINT DF_geo_division_sort_key DEFAULT (N''),
         code_iso         NVARCHAR(16)   NULL,
         parent_code      NVARCHAR(32)   NULL,
         depth            SMALLINT       NOT NULL,
@@ -83,12 +83,12 @@ GO
 
 IF NOT EXISTS (
     SELECT 1 FROM sys.indexes
-    WHERE name = N'IX_geo_division_code6'
+    WHERE name = N'IX_geo_division_sort_key'
       AND object_id = OBJECT_ID(N'dbo.geo_division')
 )
 BEGIN
-    CREATE NONCLUSTERED INDEX IX_geo_division_code6
-        ON dbo.geo_division (country, code6);
+    CREATE NONCLUSTERED INDEX IX_geo_division_sort_key
+        ON dbo.geo_division (country, sort_key);
 END
 GO
 
@@ -108,7 +108,7 @@ BEGIN
     INSERT INTO @cols (col, descr) VALUES
         (N'country',          N'ISO 3166-1 alpha-2，如 CN、US'),
         (N'code',             N'国内区划代码，同国内唯一'),
-        (N'code6',            N'定长排序键；不保证唯一'),
+        (N'sort_key',         N'国别排序键（定长补齐等）；不保证唯一'),
         (N'code_iso',         N'ISO 3166-2；无则为 NULL'),
         (N'parent_code',      N'上级 code；一级为 NULL'),
         (N'depth',            N'树深度：根=1，子=父+1'),

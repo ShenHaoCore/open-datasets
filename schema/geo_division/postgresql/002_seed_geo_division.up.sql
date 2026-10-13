@@ -6,7 +6,7 @@ BEGIN;
 
 DELETE FROM geo_division WHERE country IN ('CN', 'US');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '11', '110000', 'CN-BJ', NULL, 1, '北京市', '北京', 'Beijing', '', 'municipality', '', 'active'),
 ('CN', '110101', '110101', NULL, '11', 2, '东城区', '东城', '', '', 'district', '', 'active'),
 ('CN', '110102', '110102', NULL, '11', 2, '西城区', '西城', '', '', 'district', '', 'active'),
@@ -108,7 +108,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '130425', '130425', NULL, '1304', 3, '大名县', '大名', '', '', 'county', '', 'active'),
 ('CN', '130426', '130426', NULL, '1304', 3, '涉县', '涉', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '130427', '130427', NULL, '1304', 3, '磁县', '磁', '', '', 'county', '', 'active'),
 ('CN', '130430', '130430', NULL, '1304', 3, '邱县', '邱', '', '', 'county', '', 'active'),
 ('CN', '130431', '130431', NULL, '1304', 3, '鸡泽县', '鸡泽', '', '', 'county', '', 'active'),
@@ -210,7 +210,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '130926', '130926', NULL, '1309', 3, '肃宁县', '肃宁', '', '', 'county', '', 'active'),
 ('CN', '130927', '130927', NULL, '1309', 3, '南皮县', '南皮', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '130928', '130928', NULL, '1309', 3, '吴桥县', '吴桥', '', '', 'county', '', 'active'),
 ('CN', '130929', '130929', NULL, '1309', 3, '献县', '献', '', '', 'county', '', 'active'),
 ('CN', '130930', '130930', NULL, '1309', 3, '孟村回族自治县', '孟村回族', '', '', 'autonomous_county', '', 'active'),
@@ -312,7 +312,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '140721', '140721', NULL, '1407', 3, '榆社县', '榆社', '', '', 'county', '', 'active'),
 ('CN', '140722', '140722', NULL, '1407', 3, '左权县', '左权', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '140723', '140723', NULL, '1407', 3, '和顺县', '和顺', '', '', 'county', '', 'active'),
 ('CN', '140724', '140724', NULL, '1407', 3, '昔阳县', '昔阳', '', '', 'county', '', 'active'),
 ('CN', '140725', '140725', NULL, '1407', 3, '寿阳县', '寿阳', '', '', 'county', '', 'active'),
@@ -414,7 +414,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '150403', '150403', NULL, '1504', 3, '元宝山区', '元宝山', '', '', 'district', '', 'active'),
 ('CN', '150404', '150404', NULL, '1504', 3, '松山区', '松山', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '150421', '150421', NULL, '1504', 3, '阿鲁科尔沁旗', '阿鲁科尔沁', '', '', 'banner', '', 'active'),
 ('CN', '150422', '150422', NULL, '1504', 3, '巴林左旗', '巴林左', '', '', 'banner', '', 'active'),
 ('CN', '150423', '150423', NULL, '1504', 3, '巴林右旗', '巴林右', '', '', 'banner', '', 'active'),
@@ -516,7 +516,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '210112', '210112', NULL, '2101', 3, '浑南区', '浑南', '', '', 'district', '', 'active'),
 ('CN', '210113', '210113', NULL, '2101', 3, '沈北新区', '沈北新', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '210114', '210114', NULL, '2101', 3, '于洪区', '于洪', '', '', 'district', '', 'active'),
 ('CN', '210115', '210115', NULL, '2101', 3, '辽中区', '辽中', '', '', 'district', '', 'active'),
 ('CN', '210123', '210123', NULL, '2101', 3, '康平县', '康平', '', '', 'county', '', 'active'),
@@ -618,7 +618,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '2114', '211400', NULL, '21', 2, '葫芦岛市', '葫芦岛', '', '', 'prefecture_city', '', 'active'),
 ('CN', '211402', '211402', NULL, '2114', 3, '连山区', '连山', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '211403', '211403', NULL, '2114', 3, '龙港区', '龙港', '', '', 'district', '', 'active'),
 ('CN', '211404', '211404', NULL, '2114', 3, '南票区', '南票', '', '', 'district', '', 'active'),
 ('CN', '211421', '211421', NULL, '2114', 3, '绥中县', '绥中', '', '', 'county', '', 'active'),
@@ -720,7 +720,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '230126', '230126', NULL, '2301', 3, '巴彦县', '巴彦', '', '', 'county', '', 'active'),
 ('CN', '230127', '230127', NULL, '2301', 3, '木兰县', '木兰', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '230128', '230128', NULL, '2301', 3, '通河县', '通河', '', '', 'county', '', 'active'),
 ('CN', '230129', '230129', NULL, '2301', 3, '延寿县', '延寿', '', '', 'county', '', 'active'),
 ('CN', '230183', '230183', NULL, '2301', 3, '尚志市', '尚志', '', '', 'county_city', '', 'active'),
@@ -822,7 +822,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '2311', '231100', NULL, '23', 2, '黑河市', '黑河', '', '', 'prefecture_city', '', 'active'),
 ('CN', '231102', '231102', NULL, '2311', 3, '爱辉区', '爱辉', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '231123', '231123', NULL, '2311', 3, '逊克县', '逊克', '', '', 'county', '', 'active'),
 ('CN', '231124', '231124', NULL, '2311', 3, '孙吴县', '孙吴', '', '', 'county', '', 'active'),
 ('CN', '231181', '231181', NULL, '2311', 3, '北安市', '北安', '', '', 'county_city', '', 'active'),
@@ -924,7 +924,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '320681', '320681', NULL, '3206', 3, '启东市', '启东', '', '', 'county_city', '', 'active'),
 ('CN', '320682', '320682', NULL, '3206', 3, '如皋市', '如皋', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '320685', '320685', NULL, '3206', 3, '海安市', '海安', '', '', 'county_city', '', 'active'),
 ('CN', '3207', '320700', NULL, '32', 2, '连云港市', '连云港', '', '', 'prefecture_city', '', 'active'),
 ('CN', '320703', '320703', NULL, '3207', 3, '连云区', '连云', '', '', 'district', '', 'active'),
@@ -1026,7 +1026,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '3304', '330400', NULL, '33', 2, '嘉兴市', '嘉兴', '', '', 'prefecture_city', '', 'active'),
 ('CN', '330402', '330402', NULL, '3304', 3, '南湖区', '南湖', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '330411', '330411', NULL, '3304', 3, '秀洲区', '秀洲', '', '', 'district', '', 'active'),
 ('CN', '330421', '330421', NULL, '3304', 3, '嘉善县', '嘉善', '', '', 'county', '', 'active'),
 ('CN', '330424', '330424', NULL, '3304', 3, '海盐县', '海盐', '', '', 'county', '', 'active'),
@@ -1128,7 +1128,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '340404', '340404', NULL, '3404', 3, '谢家集区', '谢家集', '', '', 'district', '', 'active'),
 ('CN', '340405', '340405', NULL, '3404', 3, '八公山区', '八公山', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '340406', '340406', NULL, '3404', 3, '潘集区', '潘集', '', '', 'district', '', 'active'),
 ('CN', '340421', '340421', NULL, '3404', 3, '凤台县', '凤台', '', '', 'county', '', 'active'),
 ('CN', '340422', '340422', NULL, '3404', 3, '寿县', '寿', '', '', 'county', '', 'active'),
@@ -1230,7 +1230,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '3501', '350100', NULL, '35', 2, '福州市', '福州', '', '', 'prefecture_city', '', 'active'),
 ('CN', '350102', '350102', NULL, '3501', 3, '鼓楼区', '鼓楼', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '350103', '350103', NULL, '3501', 3, '台江区', '台江', '', '', 'district', '', 'active'),
 ('CN', '350104', '350104', NULL, '3501', 3, '仓山区', '仓山', '', '', 'district', '', 'active'),
 ('CN', '350105', '350105', NULL, '3501', 3, '马尾区', '马尾', '', '', 'district', '', 'active'),
@@ -1332,7 +1332,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '360113', '360113', NULL, '3601', 3, '红谷滩区', '红谷滩', '', '', 'district', '', 'active'),
 ('CN', '360121', '360121', NULL, '3601', 3, '南昌县', '南昌', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '360123', '360123', NULL, '3601', 3, '安义县', '安义', '', '', 'county', '', 'active'),
 ('CN', '360124', '360124', NULL, '3601', 3, '进贤县', '进贤', '', '', 'county', '', 'active'),
 ('CN', '3602', '360200', NULL, '36', 2, '景德镇市', '景德镇', '', '', 'prefecture_city', '', 'active'),
@@ -1434,7 +1434,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '361127', '361127', NULL, '3611', 3, '余干县', '余干', '', '', 'county', '', 'active'),
 ('CN', '361128', '361128', NULL, '3611', 3, '鄱阳县', '鄱阳', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '361129', '361129', NULL, '3611', 3, '万年县', '万年', '', '', 'county', '', 'active'),
 ('CN', '361130', '361130', NULL, '3611', 3, '婺源县', '婺源', '', '', 'county', '', 'active'),
 ('CN', '361181', '361181', NULL, '3611', 3, '德兴市', '德兴', '', '', 'county_city', '', 'active'),
@@ -1536,7 +1536,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '370923', '370923', NULL, '3709', 3, '东平县', '东平', '', '', 'county', '', 'active'),
 ('CN', '370982', '370982', NULL, '3709', 3, '新泰市', '新泰', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '370983', '370983', NULL, '3709', 3, '肥城市', '肥城', '', '', 'county_city', '', 'active'),
 ('CN', '3710', '371000', NULL, '37', 2, '威海市', '威海', '', '', 'prefecture_city', '', 'active'),
 ('CN', '371002', '371002', NULL, '3710', 3, '环翠区', '环翠', '', '', 'district', '', 'active'),
@@ -1638,7 +1638,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '4103', '410300', NULL, '41', 2, '洛阳市', '洛阳', '', '', 'prefecture_city', '', 'active'),
 ('CN', '410302', '410302', NULL, '4103', 3, '老城区', '老城', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '410303', '410303', NULL, '4103', 3, '西工区', '西工', '', '', 'district', '', 'active'),
 ('CN', '410304', '410304', NULL, '4103', 3, '瀍河回族区', '瀍河回族', '', '', 'district', '', 'active'),
 ('CN', '410305', '410305', NULL, '4103', 3, '涧西区', '涧西', '', '', 'district', '', 'active'),
@@ -1740,7 +1740,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '411202', '411202', NULL, '4112', 3, '湖滨区', '湖滨', '', '', 'district', '', 'active'),
 ('CN', '411203', '411203', NULL, '4112', 3, '陕州区', '陕州', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '411221', '411221', NULL, '4112', 3, '渑池县', '渑池', '', '', 'county', '', 'active'),
 ('CN', '411224', '411224', NULL, '4112', 3, '卢氏县', '卢氏', '', '', 'county', '', 'active'),
 ('CN', '411271', '411271', NULL, '4112', 3, '河南三门峡经济开发区', '河南三门峡经济开发', '', '', 'district', '', 'active'),
@@ -1842,7 +1842,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '420324', '420324', NULL, '4203', 3, '竹溪县', '竹溪', '', '', 'county', '', 'active'),
 ('CN', '420325', '420325', NULL, '4203', 3, '房县', '房', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '420381', '420381', NULL, '4203', 3, '丹江口市', '丹江口', '', '', 'county_city', '', 'active'),
 ('CN', '4205', '420500', NULL, '42', 2, '宜昌市', '宜昌', '', '', 'prefecture_city', '', 'active'),
 ('CN', '420502', '420502', NULL, '4205', 3, '西陵区', '西陵', '', '', 'district', '', 'active'),
@@ -1944,7 +1944,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '430181', '430181', NULL, '4301', 3, '浏阳市', '浏阳', '', '', 'county_city', '', 'active'),
 ('CN', '430182', '430182', NULL, '4301', 3, '宁乡市', '宁乡', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '4302', '430200', NULL, '43', 2, '株洲市', '株洲', '', '', 'prefecture_city', '', 'active'),
 ('CN', '430202', '430202', NULL, '4302', 3, '荷塘区', '荷塘', '', '', 'district', '', 'active'),
 ('CN', '430203', '430203', NULL, '4302', 3, '芦淞区', '芦淞', '', '', 'district', '', 'active'),
@@ -2046,7 +2046,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '431122', '431122', NULL, '4311', 3, '东安县', '东安', '', '', 'county', '', 'active'),
 ('CN', '431123', '431123', NULL, '4311', 3, '双牌县', '双牌', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '431124', '431124', NULL, '4311', 3, '道县', '道', '', '', 'county', '', 'active'),
 ('CN', '431125', '431125', NULL, '4311', 3, '江永县', '江永', '', '', 'county', '', 'active'),
 ('CN', '431126', '431126', NULL, '4311', 3, '宁远县', '宁远', '', '', 'county', '', 'active'),
@@ -2148,7 +2148,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '4408', '440800', NULL, '44', 2, '湛江市', '湛江', '', '', 'prefecture_city', '', 'active'),
 ('CN', '440802', '440802', NULL, '4408', 3, '赤坎区', '赤坎', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '440803', '440803', NULL, '4408', 3, '霞山区', '霞山', '', '', 'district', '', 'active'),
 ('CN', '440804', '440804', NULL, '4408', 3, '坡头区', '坡头', '', '', 'district', '', 'active'),
 ('CN', '440811', '440811', NULL, '4408', 3, '麻章区', '麻章', '', '', 'district', '', 'active'),
@@ -2250,7 +2250,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '4502', '450200', NULL, '45', 2, '柳州市', '柳州', '', '', 'prefecture_city', '', 'active'),
 ('CN', '450202', '450202', NULL, '4502', 3, '城中区', '城中', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '450203', '450203', NULL, '4502', 3, '鱼峰区', '鱼峰', '', '', 'district', '', 'active'),
 ('CN', '450204', '450204', NULL, '4502', 3, '柳南区', '柳南', '', '', 'district', '', 'active'),
 ('CN', '450205', '450205', NULL, '4502', 3, '柳北区', '柳北', '', '', 'district', '', 'active'),
@@ -2352,7 +2352,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '451322', '451322', NULL, '4513', 3, '象州县', '象州', '', '', 'county', '', 'active'),
 ('CN', '451323', '451323', NULL, '4513', 3, '武宣县', '武宣', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '451324', '451324', NULL, '4513', 3, '金秀瑶族自治县', '金秀瑶族', '', '', 'autonomous_county', '', 'active'),
 ('CN', '451381', '451381', NULL, '4513', 3, '合山市', '合山', '', '', 'county_city', '', 'active'),
 ('CN', '4514', '451400', NULL, '45', 2, '崇左市', '崇左', '', '', 'prefecture_city', '', 'active'),
@@ -2454,7 +2454,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '510181', '510181', NULL, '5101', 3, '都江堰市', '都江堰', '', '', 'county_city', '', 'active'),
 ('CN', '510182', '510182', NULL, '5101', 3, '彭州市', '彭州', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '510183', '510183', NULL, '5101', 3, '邛崃市', '邛崃', '', '', 'county_city', '', 'active'),
 ('CN', '510184', '510184', NULL, '5101', 3, '崇州市', '崇州', '', '', 'county_city', '', 'active'),
 ('CN', '510185', '510185', NULL, '5101', 3, '简阳市', '简阳', '', '', 'county_city', '', 'active'),
@@ -2556,7 +2556,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '511527', '511527', NULL, '5115', 3, '筠连县', '筠连', '', '', 'county', '', 'active'),
 ('CN', '511528', '511528', NULL, '5115', 3, '兴文县', '兴文', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '511529', '511529', NULL, '5115', 3, '屏山县', '屏山', '', '', 'county', '', 'active'),
 ('CN', '5116', '511600', NULL, '51', 2, '广安市', '广安', '', '', 'prefecture_city', '', 'active'),
 ('CN', '511602', '511602', NULL, '5116', 3, '广安区', '广安', '', '', 'district', '', 'active'),
@@ -2658,7 +2658,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '5202', '520200', NULL, '52', 2, '六盘水市', '六盘水', '', '', 'prefecture_city', '', 'active'),
 ('CN', '520201', '520201', NULL, '5202', 3, '钟山区', '钟山', '', '', 'district', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '520203', '520203', NULL, '5202', 3, '六枝特区', '六枝', '', '', 'special_zone', '', 'active'),
 ('CN', '520204', '520204', NULL, '5202', 3, '水城区', '水城', '', '', 'district', '', 'active'),
 ('CN', '520281', '520281', NULL, '5202', 3, '盘州市', '盘州', '', '', 'county_city', '', 'active'),
@@ -2760,7 +2760,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '530129', '530129', NULL, '5301', 3, '寻甸回族彝族自治县', '寻甸回族彝族', '', '', 'autonomous_county', '', 'active'),
 ('CN', '530181', '530181', NULL, '5301', 3, '安宁市', '安宁', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '5303', '530300', NULL, '53', 2, '曲靖市', '曲靖', '', '', 'prefecture_city', '', 'active'),
 ('CN', '530302', '530302', NULL, '5303', 3, '麒麟区', '麒麟', '', '', 'district', '', 'active'),
 ('CN', '530303', '530303', NULL, '5303', 3, '沾益区', '沾益', '', '', 'district', '', 'active'),
@@ -2862,7 +2862,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '5328', '532800', NULL, '53', 2, '西双版纳傣族自治州', '西双版纳傣族', '', '', 'autonomous_prefecture', '', 'active'),
 ('CN', '532801', '532801', NULL, '5328', 3, '景洪市', '景洪', '', '', 'county_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '532822', '532822', NULL, '5328', 3, '勐海县', '勐海', '', '', 'county', '', 'active'),
 ('CN', '532823', '532823', NULL, '5328', 3, '勐腊县', '勐腊', '', '', 'county', '', 'active'),
 ('CN', '5329', '532900', NULL, '53', 2, '大理白族自治州', '大理白族', '', '', 'autonomous_prefecture', '', 'active'),
@@ -2964,7 +2964,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '540621', '540621', NULL, '5406', 3, '嘉黎县', '嘉黎', '', '', 'county', '', 'active'),
 ('CN', '540622', '540622', NULL, '5406', 3, '比如县', '比如', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '540623', '540623', NULL, '5406', 3, '聂荣县', '聂荣', '', '', 'county', '', 'active'),
 ('CN', '540624', '540624', NULL, '5406', 3, '安多县', '安多', '', '', 'county', '', 'active'),
 ('CN', '540625', '540625', NULL, '5406', 3, '申扎县', '申扎', '', '', 'county', '', 'active'),
@@ -3066,7 +3066,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '610727', '610727', NULL, '6107', 3, '略阳县', '略阳', '', '', 'county', '', 'active'),
 ('CN', '610728', '610728', NULL, '6107', 3, '镇巴县', '镇巴', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '610729', '610729', NULL, '6107', 3, '留坝县', '留坝', '', '', 'county', '', 'active'),
 ('CN', '610730', '610730', NULL, '6107', 3, '佛坪县', '佛坪', '', '', 'county', '', 'active'),
 ('CN', '6108', '610800', NULL, '61', 2, '榆林市', '榆林', '', '', 'prefecture_city', '', 'active'),
@@ -3168,7 +3168,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '621025', '621025', NULL, '6210', 3, '正宁县', '正宁', '', '', 'county', '', 'active'),
 ('CN', '621026', '621026', NULL, '6210', 3, '宁县', '宁', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '621027', '621027', NULL, '6210', 3, '镇原县', '镇原', '', '', 'county', '', 'active'),
 ('CN', '6211', '621100', NULL, '62', 2, '定西市', '定西', '', '', 'prefecture_city', '', 'active'),
 ('CN', '621102', '621102', NULL, '6211', 3, '安定区', '安定', '', '', 'district', '', 'active'),
@@ -3270,7 +3270,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '640181', '640181', NULL, '6401', 3, '灵武市', '灵武', '', '', 'county_city', '', 'active'),
 ('CN', '6402', '640200', NULL, '64', 2, '石嘴山市', '石嘴山', '', '', 'prefecture_city', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '640202', '640202', NULL, '6402', 3, '大武口区', '大武口', '', '', 'district', '', 'active'),
 ('CN', '640205', '640205', NULL, '6402', 3, '惠农区', '惠农', '', '', 'district', '', 'active'),
 ('CN', '640221', '640221', NULL, '6402', 3, '平罗县', '平罗', '', '', 'county', '', 'active'),
@@ -3372,7 +3372,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('CN', '653224', '653224', NULL, '6532', 3, '洛浦县', '洛浦', '', '', 'county', '', 'active'),
 ('CN', '653225', '653225', NULL, '6532', 3, '策勒县', '策勒', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('CN', '653226', '653226', NULL, '6532', 3, '于田县', '于田', '', '', 'county', '', 'active'),
 ('CN', '653227', '653227', NULL, '6532', 3, '民丰县', '民丰', '', '', 'county', '', 'active'),
 ('CN', '6540', '654000', NULL, '65', 2, '伊犁哈萨克自治州', '伊犁哈萨克', '', '', 'autonomous_prefecture', '', 'active'),
@@ -3474,7 +3474,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '01105', '011050', NULL, '01', 2, 'Perry County', '', '', '', 'county', '', 'active'),
 ('US', '01107', '011070', NULL, '01', 2, 'Pickens County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '01109', '011090', NULL, '01', 2, 'Pike County', '', '', '', 'county', '', 'active'),
 ('US', '01111', '011110', NULL, '01', 2, 'Randolph County', '', '', '', 'county', '', 'active'),
 ('US', '01113', '011130', NULL, '01', 2, 'Russell County', '', '', '', 'county', '', 'active'),
@@ -3576,7 +3576,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '05075', '050750', NULL, '05', 2, 'Lawrence County', '', '', '', 'county', '', 'active'),
 ('US', '05077', '050770', NULL, '05', 2, 'Lee County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '05079', '050790', NULL, '05', 2, 'Lincoln County', '', '', '', 'county', '', 'active'),
 ('US', '05081', '050810', NULL, '05', 2, 'Little River County', '', '', '', 'county', '', 'active'),
 ('US', '05083', '050830', NULL, '05', 2, 'Logan County', '', '', '', 'county', '', 'active'),
@@ -3678,7 +3678,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '08005', '080050', NULL, '08', 2, 'Arapahoe County', '', '', '', 'county', '', 'active'),
 ('US', '08007', '080070', NULL, '08', 2, 'Archuleta County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '08009', '080090', NULL, '08', 2, 'Baca County', '', '', '', 'county', '', 'active'),
 ('US', '08011', '080110', NULL, '08', 2, 'Bent County', '', '', '', 'county', '', 'active'),
 ('US', '08013', '080130', NULL, '08', 2, 'Boulder County', '', '', '', 'county', '', 'active'),
@@ -3780,7 +3780,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '12049', '120490', NULL, '12', 2, 'Hardee County', '', '', '', 'county', '', 'active'),
 ('US', '12051', '120510', NULL, '12', 2, 'Hendry County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '12053', '120530', NULL, '12', 2, 'Hernando County', '', '', '', 'county', '', 'active'),
 ('US', '12055', '120550', NULL, '12', 2, 'Highlands County', '', '', '', 'county', '', 'active'),
 ('US', '12057', '120570', NULL, '12', 2, 'Hillsborough County', '', '', '', 'county', '', 'active'),
@@ -3882,7 +3882,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '13113', '131130', NULL, '13', 2, 'Fayette County', '', '', '', 'county', '', 'active'),
 ('US', '13115', '131150', NULL, '13', 2, 'Floyd County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '13117', '131170', NULL, '13', 2, 'Forsyth County', '', '', '', 'county', '', 'active'),
 ('US', '13119', '131190', NULL, '13', 2, 'Franklin County', '', '', '', 'county', '', 'active'),
 ('US', '13121', '131210', NULL, '13', 2, 'Fulton County', '', '', '', 'county', '', 'active'),
@@ -3984,7 +3984,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '13315', '133150', NULL, '13', 2, 'Wilcox County', '', '', '', 'county', '', 'active'),
 ('US', '13317', '133170', NULL, '13', 2, 'Wilkes County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '13319', '133190', NULL, '13', 2, 'Wilkinson County', '', '', '', 'county', '', 'active'),
 ('US', '13321', '133210', NULL, '13', 2, 'Worth County', '', '', '', 'county', '', 'active'),
 ('US', '15', '150000', 'US-HI', NULL, 1, 'Hawaii', '', '', '夏威夷', 'state', 'HI', 'active'),
@@ -4086,7 +4086,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '17089', '170890', NULL, '17', 2, 'Kane County', '', '', '', 'county', '', 'active'),
 ('US', '17091', '170910', NULL, '17', 2, 'Kankakee County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '17093', '170930', NULL, '17', 2, 'Kendall County', '', '', '', 'county', '', 'active'),
 ('US', '17095', '170950', NULL, '17', 2, 'Knox County', '', '', '', 'county', '', 'active'),
 ('US', '17097', '170970', NULL, '17', 2, 'Lake County', '', '', '', 'county', '', 'active'),
@@ -4188,7 +4188,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '18083', '180830', NULL, '18', 2, 'Knox County', '', '', '', 'county', '', 'active'),
 ('US', '18085', '180850', NULL, '18', 2, 'Kosciusko County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '18087', '180870', NULL, '18', 2, 'LaGrange County', '', '', '', 'county', '', 'active'),
 ('US', '18089', '180890', NULL, '18', 2, 'Lake County', '', '', '', 'county', '', 'active'),
 ('US', '18091', '180910', NULL, '18', 2, 'LaPorte County', '', '', '', 'county', '', 'active'),
@@ -4290,7 +4290,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '19097', '190970', NULL, '19', 2, 'Jackson County', '', '', '', 'county', '', 'active'),
 ('US', '19099', '190990', NULL, '19', 2, 'Jasper County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '19101', '191010', NULL, '19', 2, 'Jefferson County', '', '', '', 'county', '', 'active'),
 ('US', '19103', '191030', NULL, '19', 2, 'Johnson County', '', '', '', 'county', '', 'active'),
 ('US', '19105', '191050', NULL, '19', 2, 'Jones County', '', '', '', 'county', '', 'active'),
@@ -4392,7 +4392,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '20097', '200970', NULL, '20', 2, 'Kiowa County', '', '', '', 'county', '', 'active'),
 ('US', '20099', '200990', NULL, '20', 2, 'Labette County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '20101', '201010', NULL, '20', 2, 'Lane County', '', '', '', 'county', '', 'active'),
 ('US', '20103', '201030', NULL, '20', 2, 'Leavenworth County', '', '', '', 'county', '', 'active'),
 ('US', '20105', '201050', NULL, '20', 2, 'Lincoln County', '', '', '', 'county', '', 'active'),
@@ -4494,7 +4494,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '21085', '210850', NULL, '21', 2, 'Grayson County', '', '', '', 'county', '', 'active'),
 ('US', '21087', '210870', NULL, '21', 2, 'Green County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '21089', '210890', NULL, '21', 2, 'Greenup County', '', '', '', 'county', '', 'active'),
 ('US', '21091', '210910', NULL, '21', 2, 'Hancock County', '', '', '', 'county', '', 'active'),
 ('US', '21093', '210930', NULL, '21', 2, 'Hardin County', '', '', '', 'county', '', 'active'),
@@ -4596,7 +4596,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '22043', '220430', NULL, '22', 2, 'Grant Parish', '', '', '', 'parish', '', 'active'),
 ('US', '22045', '220450', NULL, '22', 2, 'Iberia Parish', '', '', '', 'parish', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '22047', '220470', NULL, '22', 2, 'Iberville Parish', '', '', '', 'parish', '', 'active'),
 ('US', '22049', '220490', NULL, '22', 2, 'Jackson Parish', '', '', '', 'parish', '', 'active'),
 ('US', '22051', '220510', NULL, '22', 2, 'Jefferson Parish', '', '', '', 'parish', '', 'active'),
@@ -4698,7 +4698,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '26', '260000', 'US-MI', NULL, 1, 'Michigan', '', '', '密歇根', 'state', 'MI', 'active'),
 ('US', '26001', '260010', NULL, '26', 2, 'Alcona County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '26003', '260030', NULL, '26', 2, 'Alger County', '', '', '', 'county', '', 'active'),
 ('US', '26005', '260050', NULL, '26', 2, 'Allegan County', '', '', '', 'county', '', 'active'),
 ('US', '26007', '260070', NULL, '26', 2, 'Alpena County', '', '', '', 'county', '', 'active'),
@@ -4800,7 +4800,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '27031', '270310', NULL, '27', 2, 'Cook County', '', '', '', 'county', '', 'active'),
 ('US', '27033', '270330', NULL, '27', 2, 'Cottonwood County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '27035', '270350', NULL, '27', 2, 'Crow Wing County', '', '', '', 'county', '', 'active'),
 ('US', '27037', '270370', NULL, '27', 2, 'Dakota County', '', '', '', 'county', '', 'active'),
 ('US', '27039', '270390', NULL, '27', 2, 'Dodge County', '', '', '', 'county', '', 'active'),
@@ -4902,7 +4902,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '28055', '280550', NULL, '28', 2, 'Issaquena County', '', '', '', 'county', '', 'active'),
 ('US', '28057', '280570', NULL, '28', 2, 'Itawamba County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '28059', '280590', NULL, '28', 2, 'Jackson County', '', '', '', 'county', '', 'active'),
 ('US', '28061', '280610', NULL, '28', 2, 'Jasper County', '', '', '', 'county', '', 'active'),
 ('US', '28063', '280630', NULL, '28', 2, 'Jefferson County', '', '', '', 'county', '', 'active'),
@@ -5004,7 +5004,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '29089', '290890', NULL, '29', 2, 'Howard County', '', '', '', 'county', '', 'active'),
 ('US', '29091', '290910', NULL, '29', 2, 'Howell County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '29093', '290930', NULL, '29', 2, 'Iron County', '', '', '', 'county', '', 'active'),
 ('US', '29095', '290950', NULL, '29', 2, 'Jackson County', '', '', '', 'county', '', 'active'),
 ('US', '29097', '290970', NULL, '29', 2, 'Jasper County', '', '', '', 'county', '', 'active'),
@@ -5106,7 +5106,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '30057', '300570', NULL, '30', 2, 'Madison County', '', '', '', 'county', '', 'active'),
 ('US', '30059', '300590', NULL, '30', 2, 'Meagher County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '30061', '300610', NULL, '30', 2, 'Mineral County', '', '', '', 'county', '', 'active'),
 ('US', '30063', '300630', NULL, '30', 2, 'Missoula County', '', '', '', 'county', '', 'active'),
 ('US', '30065', '300650', NULL, '30', 2, 'Musselshell County', '', '', '', 'county', '', 'active'),
@@ -5208,7 +5208,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '31143', '311430', NULL, '31', 2, 'Polk County', '', '', '', 'county', '', 'active'),
 ('US', '31145', '311450', NULL, '31', 2, 'Red Willow County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '31147', '311470', NULL, '31', 2, 'Richardson County', '', '', '', 'county', '', 'active'),
 ('US', '31149', '311490', NULL, '31', 2, 'Rock County', '', '', '', 'county', '', 'active'),
 ('US', '31151', '311510', NULL, '31', 2, 'Saline County', '', '', '', 'county', '', 'active'),
@@ -5310,7 +5310,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '35049', '350490', NULL, '35', 2, 'Santa Fe County', '', '', '', 'county', '', 'active'),
 ('US', '35051', '350510', NULL, '35', 2, 'Sierra County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '35053', '350530', NULL, '35', 2, 'Socorro County', '', '', '', 'county', '', 'active'),
 ('US', '35055', '350550', NULL, '35', 2, 'Taos County', '', '', '', 'county', '', 'active'),
 ('US', '35057', '350570', NULL, '35', 2, 'Torrance County', '', '', '', 'county', '', 'active'),
@@ -5412,7 +5412,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '37059', '370590', NULL, '37', 2, 'Davie County', '', '', '', 'county', '', 'active'),
 ('US', '37061', '370610', NULL, '37', 2, 'Duplin County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '37063', '370630', NULL, '37', 2, 'Durham County', '', '', '', 'county', '', 'active'),
 ('US', '37065', '370650', NULL, '37', 2, 'Edgecombe County', '', '', '', 'county', '', 'active'),
 ('US', '37067', '370670', NULL, '37', 2, 'Forsyth County', '', '', '', 'county', '', 'active'),
@@ -5514,7 +5514,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '38057', '380570', NULL, '38', 2, 'Mercer County', '', '', '', 'county', '', 'active'),
 ('US', '38059', '380590', NULL, '38', 2, 'Morton County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '38061', '380610', NULL, '38', 2, 'Mountrail County', '', '', '', 'county', '', 'active'),
 ('US', '38063', '380630', NULL, '38', 2, 'Nelson County', '', '', '', 'county', '', 'active'),
 ('US', '38065', '380650', NULL, '38', 2, 'Oliver County', '', '', '', 'county', '', 'active'),
@@ -5616,7 +5616,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '39149', '391490', NULL, '39', 2, 'Shelby County', '', '', '', 'county', '', 'active'),
 ('US', '39151', '391510', NULL, '39', 2, 'Stark County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '39153', '391530', NULL, '39', 2, 'Summit County', '', '', '', 'county', '', 'active'),
 ('US', '39155', '391550', NULL, '39', 2, 'Trumbull County', '', '', '', 'county', '', 'active'),
 ('US', '39157', '391570', NULL, '39', 2, 'Tuscarawas County', '', '', '', 'county', '', 'active'),
@@ -5718,7 +5718,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '41015', '410150', NULL, '41', 2, 'Curry County', '', '', '', 'county', '', 'active'),
 ('US', '41017', '410170', NULL, '41', 2, 'Deschutes County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '41019', '410190', NULL, '41', 2, 'Douglas County', '', '', '', 'county', '', 'active'),
 ('US', '41021', '410210', NULL, '41', 2, 'Gilliam County', '', '', '', 'county', '', 'active'),
 ('US', '41023', '410230', NULL, '41', 2, 'Grant County', '', '', '', 'county', '', 'active'),
@@ -5820,7 +5820,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '44005', '440050', NULL, '44', 2, 'Newport County', '', '', '', 'county', '', 'active'),
 ('US', '44007', '440070', NULL, '44', 2, 'Providence County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '44009', '440090', NULL, '44', 2, 'Washington County', '', '', '', 'county', '', 'active'),
 ('US', '45', '450000', 'US-SC', NULL, 1, 'South Carolina', '', '', '南卡', 'state', 'SC', 'active'),
 ('US', '45001', '450010', NULL, '45', 2, 'Abbeville County', '', '', '', 'county', '', 'active'),
@@ -5922,7 +5922,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '46101', '461010', NULL, '46', 2, 'Moody County', '', '', '', 'county', '', 'active'),
 ('US', '46102', '461020', NULL, '46', 2, 'Oglala Lakota County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '46103', '461030', NULL, '46', 2, 'Pennington County', '', '', '', 'county', '', 'active'),
 ('US', '46105', '461050', NULL, '46', 2, 'Perkins County', '', '', '', 'county', '', 'active'),
 ('US', '46107', '461070', NULL, '46', 2, 'Potter County', '', '', '', 'county', '', 'active'),
@@ -6024,7 +6024,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '47165', '471650', NULL, '47', 2, 'Sumner County', '', '', '', 'county', '', 'active'),
 ('US', '47167', '471670', NULL, '47', 2, 'Tipton County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '47169', '471690', NULL, '47', 2, 'Trousdale County', '', '', '', 'county', '', 'active'),
 ('US', '47171', '471710', NULL, '47', 2, 'Unicoi County', '', '', '', 'county', '', 'active'),
 ('US', '47173', '471730', NULL, '47', 2, 'Union County', '', '', '', 'county', '', 'active'),
@@ -6126,7 +6126,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '48173', '481730', NULL, '48', 2, 'Glasscock County', '', '', '', 'county', '', 'active'),
 ('US', '48175', '481750', NULL, '48', 2, 'Goliad County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '48177', '481770', NULL, '48', 2, 'Gonzales County', '', '', '', 'county', '', 'active'),
 ('US', '48179', '481790', NULL, '48', 2, 'Gray County', '', '', '', 'county', '', 'active'),
 ('US', '48181', '481810', NULL, '48', 2, 'Grayson County', '', '', '', 'county', '', 'active'),
@@ -6228,7 +6228,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '48373', '483730', NULL, '48', 2, 'Polk County', '', '', '', 'county', '', 'active'),
 ('US', '48375', '483750', NULL, '48', 2, 'Potter County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '48377', '483770', NULL, '48', 2, 'Presidio County', '', '', '', 'county', '', 'active'),
 ('US', '48379', '483790', NULL, '48', 2, 'Rains County', '', '', '', 'county', '', 'active'),
 ('US', '48381', '483810', NULL, '48', 2, 'Randall County', '', '', '', 'county', '', 'active'),
@@ -6330,7 +6330,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '50003', '500030', NULL, '50', 2, 'Bennington County', '', '', '', 'county', '', 'active'),
 ('US', '50005', '500050', NULL, '50', 2, 'Caledonia County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '50007', '500070', NULL, '50', 2, 'Chittenden County', '', '', '', 'county', '', 'active'),
 ('US', '50009', '500090', NULL, '50', 2, 'Essex County', '', '', '', 'county', '', 'active'),
 ('US', '50011', '500110', NULL, '50', 2, 'Franklin County', '', '', '', 'county', '', 'active'),
@@ -6432,7 +6432,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '51181', '511810', NULL, '51', 2, 'Surry County', '', '', '', 'county', '', 'active'),
 ('US', '51183', '511830', NULL, '51', 2, 'Sussex County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '51185', '511850', NULL, '51', 2, 'Tazewell County', '', '', '', 'county', '', 'active'),
 ('US', '51187', '511870', NULL, '51', 2, 'Warren County', '', '', '', 'county', '', 'active'),
 ('US', '51191', '511910', NULL, '51', 2, 'Washington County', '', '', '', 'county', '', 'active'),
@@ -6534,7 +6534,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '54025', '540250', NULL, '54', 2, 'Greenbrier County', '', '', '', 'county', '', 'active'),
 ('US', '54027', '540270', NULL, '54', 2, 'Hampshire County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '54029', '540290', NULL, '54', 2, 'Hancock County', '', '', '', 'county', '', 'active'),
 ('US', '54031', '540310', NULL, '54', 2, 'Hardy County', '', '', '', 'county', '', 'active'),
 ('US', '54033', '540330', NULL, '54', 2, 'Harrison County', '', '', '', 'county', '', 'active'),
@@ -6636,7 +6636,7 @@ INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, na
 ('US', '55111', '551110', NULL, '55', 2, 'Sauk County', '', '', '', 'county', '', 'active'),
 ('US', '55113', '551130', NULL, '55', 2, 'Sawyer County', '', '', '', 'county', '', 'active');
 
-INSERT INTO geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 ('US', '55115', '551150', NULL, '55', 2, 'Shawano County', '', '', '', 'county', '', 'active'),
 ('US', '55117', '551170', NULL, '55', 2, 'Sheboygan County', '', '', '', 'county', '', 'active'),
 ('US', '55119', '551190', NULL, '55', 2, 'Taylor County', '', '', '', 'county', '', 'active'),

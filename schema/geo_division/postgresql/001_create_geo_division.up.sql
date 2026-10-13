@@ -9,7 +9,7 @@ BEGIN;
 CREATE TABLE IF NOT EXISTS geo_division (
     country          CHAR(2)        NOT NULL,
     code             VARCHAR(32)    NOT NULL,
-    code6            VARCHAR(16)    NOT NULL DEFAULT '',
+    sort_key         VARCHAR(32)    NOT NULL DEFAULT '',
     code_iso         VARCHAR(16)    NULL,
     parent_code      VARCHAR(32)    NULL,
     depth            SMALLINT       NOT NULL,
@@ -40,14 +40,14 @@ CREATE INDEX IF NOT EXISTS geo_division_children_idx
 CREATE INDEX IF NOT EXISTS geo_division_depth_idx
     ON geo_division (country, depth);
 
-CREATE INDEX IF NOT EXISTS geo_division_code6_idx
-    ON geo_division (country, code6);
+CREATE INDEX IF NOT EXISTS geo_division_sort_key_idx
+    ON geo_division (country, sort_key);
 
 COMMENT ON TABLE geo_division IS '全球行政区划自连表；联动 country + parent_code；国家见 countries';
 
 COMMENT ON COLUMN geo_division.country IS 'ISO 3166-1 alpha-2，如 CN、US';
 COMMENT ON COLUMN geo_division.code IS '国内区划代码，同国内唯一';
-COMMENT ON COLUMN geo_division.code6 IS '定长排序键；不保证唯一';
+COMMENT ON COLUMN geo_division.sort_key IS '国别排序键（定长补齐等）；不保证唯一';
 COMMENT ON COLUMN geo_division.code_iso IS 'ISO 3166-2；无则为 NULL';
 COMMENT ON COLUMN geo_division.parent_code IS '上级 code；一级为 NULL';
 COMMENT ON COLUMN geo_division.depth IS '树深度：根=1，子=父+1';

@@ -13,7 +13,7 @@ BEGIN TRANSACTION;
 
 DELETE FROM dbo.geo_division WHERE country IN (N'CN', N'US');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'11', N'110000', N'CN-BJ', NULL, 1, N'北京市', N'北京', N'Beijing', N'', N'municipality', N'', N'active'),
 (N'CN', N'110101', N'110101', NULL, N'11', 2, N'东城区', N'东城', N'', N'', N'district', N'', N'active'),
 (N'CN', N'110102', N'110102', NULL, N'11', 2, N'西城区', N'西城', N'', N'', N'district', N'', N'active'),
@@ -115,7 +115,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'130425', N'130425', NULL, N'1304', 3, N'大名县', N'大名', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130426', N'130426', NULL, N'1304', 3, N'涉县', N'涉', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'130427', N'130427', NULL, N'1304', 3, N'磁县', N'磁', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130430', N'130430', NULL, N'1304', 3, N'邱县', N'邱', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130431', N'130431', NULL, N'1304', 3, N'鸡泽县', N'鸡泽', N'', N'', N'county', N'', N'active'),
@@ -217,7 +217,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'130926', N'130926', NULL, N'1309', 3, N'肃宁县', N'肃宁', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130927', N'130927', NULL, N'1309', 3, N'南皮县', N'南皮', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'130928', N'130928', NULL, N'1309', 3, N'吴桥县', N'吴桥', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130929', N'130929', NULL, N'1309', 3, N'献县', N'献', N'', N'', N'county', N'', N'active'),
 (N'CN', N'130930', N'130930', NULL, N'1309', 3, N'孟村回族自治县', N'孟村回族', N'', N'', N'autonomous_county', N'', N'active'),
@@ -319,7 +319,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'140721', N'140721', NULL, N'1407', 3, N'榆社县', N'榆社', N'', N'', N'county', N'', N'active'),
 (N'CN', N'140722', N'140722', NULL, N'1407', 3, N'左权县', N'左权', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'140723', N'140723', NULL, N'1407', 3, N'和顺县', N'和顺', N'', N'', N'county', N'', N'active'),
 (N'CN', N'140724', N'140724', NULL, N'1407', 3, N'昔阳县', N'昔阳', N'', N'', N'county', N'', N'active'),
 (N'CN', N'140725', N'140725', NULL, N'1407', 3, N'寿阳县', N'寿阳', N'', N'', N'county', N'', N'active'),
@@ -421,7 +421,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'150403', N'150403', NULL, N'1504', 3, N'元宝山区', N'元宝山', N'', N'', N'district', N'', N'active'),
 (N'CN', N'150404', N'150404', NULL, N'1504', 3, N'松山区', N'松山', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'150421', N'150421', NULL, N'1504', 3, N'阿鲁科尔沁旗', N'阿鲁科尔沁', N'', N'', N'banner', N'', N'active'),
 (N'CN', N'150422', N'150422', NULL, N'1504', 3, N'巴林左旗', N'巴林左', N'', N'', N'banner', N'', N'active'),
 (N'CN', N'150423', N'150423', NULL, N'1504', 3, N'巴林右旗', N'巴林右', N'', N'', N'banner', N'', N'active'),
@@ -523,7 +523,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'210112', N'210112', NULL, N'2101', 3, N'浑南区', N'浑南', N'', N'', N'district', N'', N'active'),
 (N'CN', N'210113', N'210113', NULL, N'2101', 3, N'沈北新区', N'沈北新', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'210114', N'210114', NULL, N'2101', 3, N'于洪区', N'于洪', N'', N'', N'district', N'', N'active'),
 (N'CN', N'210115', N'210115', NULL, N'2101', 3, N'辽中区', N'辽中', N'', N'', N'district', N'', N'active'),
 (N'CN', N'210123', N'210123', NULL, N'2101', 3, N'康平县', N'康平', N'', N'', N'county', N'', N'active'),
@@ -625,7 +625,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'2114', N'211400', NULL, N'21', 2, N'葫芦岛市', N'葫芦岛', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'211402', N'211402', NULL, N'2114', 3, N'连山区', N'连山', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'211403', N'211403', NULL, N'2114', 3, N'龙港区', N'龙港', N'', N'', N'district', N'', N'active'),
 (N'CN', N'211404', N'211404', NULL, N'2114', 3, N'南票区', N'南票', N'', N'', N'district', N'', N'active'),
 (N'CN', N'211421', N'211421', NULL, N'2114', 3, N'绥中县', N'绥中', N'', N'', N'county', N'', N'active'),
@@ -727,7 +727,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'230126', N'230126', NULL, N'2301', 3, N'巴彦县', N'巴彦', N'', N'', N'county', N'', N'active'),
 (N'CN', N'230127', N'230127', NULL, N'2301', 3, N'木兰县', N'木兰', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'230128', N'230128', NULL, N'2301', 3, N'通河县', N'通河', N'', N'', N'county', N'', N'active'),
 (N'CN', N'230129', N'230129', NULL, N'2301', 3, N'延寿县', N'延寿', N'', N'', N'county', N'', N'active'),
 (N'CN', N'230183', N'230183', NULL, N'2301', 3, N'尚志市', N'尚志', N'', N'', N'county_city', N'', N'active'),
@@ -829,7 +829,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'2311', N'231100', NULL, N'23', 2, N'黑河市', N'黑河', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'231102', N'231102', NULL, N'2311', 3, N'爱辉区', N'爱辉', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'231123', N'231123', NULL, N'2311', 3, N'逊克县', N'逊克', N'', N'', N'county', N'', N'active'),
 (N'CN', N'231124', N'231124', NULL, N'2311', 3, N'孙吴县', N'孙吴', N'', N'', N'county', N'', N'active'),
 (N'CN', N'231181', N'231181', NULL, N'2311', 3, N'北安市', N'北安', N'', N'', N'county_city', N'', N'active'),
@@ -931,7 +931,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'320681', N'320681', NULL, N'3206', 3, N'启东市', N'启东', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'320682', N'320682', NULL, N'3206', 3, N'如皋市', N'如皋', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'320685', N'320685', NULL, N'3206', 3, N'海安市', N'海安', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'3207', N'320700', NULL, N'32', 2, N'连云港市', N'连云港', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'320703', N'320703', NULL, N'3207', 3, N'连云区', N'连云', N'', N'', N'district', N'', N'active'),
@@ -1033,7 +1033,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'3304', N'330400', NULL, N'33', 2, N'嘉兴市', N'嘉兴', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'330402', N'330402', NULL, N'3304', 3, N'南湖区', N'南湖', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'330411', N'330411', NULL, N'3304', 3, N'秀洲区', N'秀洲', N'', N'', N'district', N'', N'active'),
 (N'CN', N'330421', N'330421', NULL, N'3304', 3, N'嘉善县', N'嘉善', N'', N'', N'county', N'', N'active'),
 (N'CN', N'330424', N'330424', NULL, N'3304', 3, N'海盐县', N'海盐', N'', N'', N'county', N'', N'active'),
@@ -1135,7 +1135,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'340404', N'340404', NULL, N'3404', 3, N'谢家集区', N'谢家集', N'', N'', N'district', N'', N'active'),
 (N'CN', N'340405', N'340405', NULL, N'3404', 3, N'八公山区', N'八公山', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'340406', N'340406', NULL, N'3404', 3, N'潘集区', N'潘集', N'', N'', N'district', N'', N'active'),
 (N'CN', N'340421', N'340421', NULL, N'3404', 3, N'凤台县', N'凤台', N'', N'', N'county', N'', N'active'),
 (N'CN', N'340422', N'340422', NULL, N'3404', 3, N'寿县', N'寿', N'', N'', N'county', N'', N'active'),
@@ -1237,7 +1237,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'3501', N'350100', NULL, N'35', 2, N'福州市', N'福州', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'350102', N'350102', NULL, N'3501', 3, N'鼓楼区', N'鼓楼', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'350103', N'350103', NULL, N'3501', 3, N'台江区', N'台江', N'', N'', N'district', N'', N'active'),
 (N'CN', N'350104', N'350104', NULL, N'3501', 3, N'仓山区', N'仓山', N'', N'', N'district', N'', N'active'),
 (N'CN', N'350105', N'350105', NULL, N'3501', 3, N'马尾区', N'马尾', N'', N'', N'district', N'', N'active'),
@@ -1339,7 +1339,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'360113', N'360113', NULL, N'3601', 3, N'红谷滩区', N'红谷滩', N'', N'', N'district', N'', N'active'),
 (N'CN', N'360121', N'360121', NULL, N'3601', 3, N'南昌县', N'南昌', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'360123', N'360123', NULL, N'3601', 3, N'安义县', N'安义', N'', N'', N'county', N'', N'active'),
 (N'CN', N'360124', N'360124', NULL, N'3601', 3, N'进贤县', N'进贤', N'', N'', N'county', N'', N'active'),
 (N'CN', N'3602', N'360200', NULL, N'36', 2, N'景德镇市', N'景德镇', N'', N'', N'prefecture_city', N'', N'active'),
@@ -1441,7 +1441,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'361127', N'361127', NULL, N'3611', 3, N'余干县', N'余干', N'', N'', N'county', N'', N'active'),
 (N'CN', N'361128', N'361128', NULL, N'3611', 3, N'鄱阳县', N'鄱阳', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'361129', N'361129', NULL, N'3611', 3, N'万年县', N'万年', N'', N'', N'county', N'', N'active'),
 (N'CN', N'361130', N'361130', NULL, N'3611', 3, N'婺源县', N'婺源', N'', N'', N'county', N'', N'active'),
 (N'CN', N'361181', N'361181', NULL, N'3611', 3, N'德兴市', N'德兴', N'', N'', N'county_city', N'', N'active'),
@@ -1543,7 +1543,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'370923', N'370923', NULL, N'3709', 3, N'东平县', N'东平', N'', N'', N'county', N'', N'active'),
 (N'CN', N'370982', N'370982', NULL, N'3709', 3, N'新泰市', N'新泰', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'370983', N'370983', NULL, N'3709', 3, N'肥城市', N'肥城', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'3710', N'371000', NULL, N'37', 2, N'威海市', N'威海', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'371002', N'371002', NULL, N'3710', 3, N'环翠区', N'环翠', N'', N'', N'district', N'', N'active'),
@@ -1645,7 +1645,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'4103', N'410300', NULL, N'41', 2, N'洛阳市', N'洛阳', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'410302', N'410302', NULL, N'4103', 3, N'老城区', N'老城', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'410303', N'410303', NULL, N'4103', 3, N'西工区', N'西工', N'', N'', N'district', N'', N'active'),
 (N'CN', N'410304', N'410304', NULL, N'4103', 3, N'瀍河回族区', N'瀍河回族', N'', N'', N'district', N'', N'active'),
 (N'CN', N'410305', N'410305', NULL, N'4103', 3, N'涧西区', N'涧西', N'', N'', N'district', N'', N'active'),
@@ -1747,7 +1747,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'411202', N'411202', NULL, N'4112', 3, N'湖滨区', N'湖滨', N'', N'', N'district', N'', N'active'),
 (N'CN', N'411203', N'411203', NULL, N'4112', 3, N'陕州区', N'陕州', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'411221', N'411221', NULL, N'4112', 3, N'渑池县', N'渑池', N'', N'', N'county', N'', N'active'),
 (N'CN', N'411224', N'411224', NULL, N'4112', 3, N'卢氏县', N'卢氏', N'', N'', N'county', N'', N'active'),
 (N'CN', N'411271', N'411271', NULL, N'4112', 3, N'河南三门峡经济开发区', N'河南三门峡经济开发', N'', N'', N'district', N'', N'active'),
@@ -1849,7 +1849,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'420324', N'420324', NULL, N'4203', 3, N'竹溪县', N'竹溪', N'', N'', N'county', N'', N'active'),
 (N'CN', N'420325', N'420325', NULL, N'4203', 3, N'房县', N'房', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'420381', N'420381', NULL, N'4203', 3, N'丹江口市', N'丹江口', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'4205', N'420500', NULL, N'42', 2, N'宜昌市', N'宜昌', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'420502', N'420502', NULL, N'4205', 3, N'西陵区', N'西陵', N'', N'', N'district', N'', N'active'),
@@ -1951,7 +1951,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'430181', N'430181', NULL, N'4301', 3, N'浏阳市', N'浏阳', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'430182', N'430182', NULL, N'4301', 3, N'宁乡市', N'宁乡', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'4302', N'430200', NULL, N'43', 2, N'株洲市', N'株洲', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'430202', N'430202', NULL, N'4302', 3, N'荷塘区', N'荷塘', N'', N'', N'district', N'', N'active'),
 (N'CN', N'430203', N'430203', NULL, N'4302', 3, N'芦淞区', N'芦淞', N'', N'', N'district', N'', N'active'),
@@ -2053,7 +2053,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'431122', N'431122', NULL, N'4311', 3, N'东安县', N'东安', N'', N'', N'county', N'', N'active'),
 (N'CN', N'431123', N'431123', NULL, N'4311', 3, N'双牌县', N'双牌', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'431124', N'431124', NULL, N'4311', 3, N'道县', N'道', N'', N'', N'county', N'', N'active'),
 (N'CN', N'431125', N'431125', NULL, N'4311', 3, N'江永县', N'江永', N'', N'', N'county', N'', N'active'),
 (N'CN', N'431126', N'431126', NULL, N'4311', 3, N'宁远县', N'宁远', N'', N'', N'county', N'', N'active'),
@@ -2155,7 +2155,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'4408', N'440800', NULL, N'44', 2, N'湛江市', N'湛江', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'440802', N'440802', NULL, N'4408', 3, N'赤坎区', N'赤坎', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'440803', N'440803', NULL, N'4408', 3, N'霞山区', N'霞山', N'', N'', N'district', N'', N'active'),
 (N'CN', N'440804', N'440804', NULL, N'4408', 3, N'坡头区', N'坡头', N'', N'', N'district', N'', N'active'),
 (N'CN', N'440811', N'440811', NULL, N'4408', 3, N'麻章区', N'麻章', N'', N'', N'district', N'', N'active'),
@@ -2257,7 +2257,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'4502', N'450200', NULL, N'45', 2, N'柳州市', N'柳州', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'450202', N'450202', NULL, N'4502', 3, N'城中区', N'城中', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'450203', N'450203', NULL, N'4502', 3, N'鱼峰区', N'鱼峰', N'', N'', N'district', N'', N'active'),
 (N'CN', N'450204', N'450204', NULL, N'4502', 3, N'柳南区', N'柳南', N'', N'', N'district', N'', N'active'),
 (N'CN', N'450205', N'450205', NULL, N'4502', 3, N'柳北区', N'柳北', N'', N'', N'district', N'', N'active'),
@@ -2359,7 +2359,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'451322', N'451322', NULL, N'4513', 3, N'象州县', N'象州', N'', N'', N'county', N'', N'active'),
 (N'CN', N'451323', N'451323', NULL, N'4513', 3, N'武宣县', N'武宣', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'451324', N'451324', NULL, N'4513', 3, N'金秀瑶族自治县', N'金秀瑶族', N'', N'', N'autonomous_county', N'', N'active'),
 (N'CN', N'451381', N'451381', NULL, N'4513', 3, N'合山市', N'合山', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'4514', N'451400', NULL, N'45', 2, N'崇左市', N'崇左', N'', N'', N'prefecture_city', N'', N'active'),
@@ -2461,7 +2461,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'510181', N'510181', NULL, N'5101', 3, N'都江堰市', N'都江堰', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'510182', N'510182', NULL, N'5101', 3, N'彭州市', N'彭州', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'510183', N'510183', NULL, N'5101', 3, N'邛崃市', N'邛崃', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'510184', N'510184', NULL, N'5101', 3, N'崇州市', N'崇州', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'510185', N'510185', NULL, N'5101', 3, N'简阳市', N'简阳', N'', N'', N'county_city', N'', N'active'),
@@ -2563,7 +2563,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'511527', N'511527', NULL, N'5115', 3, N'筠连县', N'筠连', N'', N'', N'county', N'', N'active'),
 (N'CN', N'511528', N'511528', NULL, N'5115', 3, N'兴文县', N'兴文', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'511529', N'511529', NULL, N'5115', 3, N'屏山县', N'屏山', N'', N'', N'county', N'', N'active'),
 (N'CN', N'5116', N'511600', NULL, N'51', 2, N'广安市', N'广安', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'511602', N'511602', NULL, N'5116', 3, N'广安区', N'广安', N'', N'', N'district', N'', N'active'),
@@ -2665,7 +2665,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'5202', N'520200', NULL, N'52', 2, N'六盘水市', N'六盘水', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'520201', N'520201', NULL, N'5202', 3, N'钟山区', N'钟山', N'', N'', N'district', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'520203', N'520203', NULL, N'5202', 3, N'六枝特区', N'六枝', N'', N'', N'special_zone', N'', N'active'),
 (N'CN', N'520204', N'520204', NULL, N'5202', 3, N'水城区', N'水城', N'', N'', N'district', N'', N'active'),
 (N'CN', N'520281', N'520281', NULL, N'5202', 3, N'盘州市', N'盘州', N'', N'', N'county_city', N'', N'active'),
@@ -2767,7 +2767,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'530129', N'530129', NULL, N'5301', 3, N'寻甸回族彝族自治县', N'寻甸回族彝族', N'', N'', N'autonomous_county', N'', N'active'),
 (N'CN', N'530181', N'530181', NULL, N'5301', 3, N'安宁市', N'安宁', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'5303', N'530300', NULL, N'53', 2, N'曲靖市', N'曲靖', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'530302', N'530302', NULL, N'5303', 3, N'麒麟区', N'麒麟', N'', N'', N'district', N'', N'active'),
 (N'CN', N'530303', N'530303', NULL, N'5303', 3, N'沾益区', N'沾益', N'', N'', N'district', N'', N'active'),
@@ -2869,7 +2869,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'5328', N'532800', NULL, N'53', 2, N'西双版纳傣族自治州', N'西双版纳傣族', N'', N'', N'autonomous_prefecture', N'', N'active'),
 (N'CN', N'532801', N'532801', NULL, N'5328', 3, N'景洪市', N'景洪', N'', N'', N'county_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'532822', N'532822', NULL, N'5328', 3, N'勐海县', N'勐海', N'', N'', N'county', N'', N'active'),
 (N'CN', N'532823', N'532823', NULL, N'5328', 3, N'勐腊县', N'勐腊', N'', N'', N'county', N'', N'active'),
 (N'CN', N'5329', N'532900', NULL, N'53', 2, N'大理白族自治州', N'大理白族', N'', N'', N'autonomous_prefecture', N'', N'active'),
@@ -2971,7 +2971,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'540621', N'540621', NULL, N'5406', 3, N'嘉黎县', N'嘉黎', N'', N'', N'county', N'', N'active'),
 (N'CN', N'540622', N'540622', NULL, N'5406', 3, N'比如县', N'比如', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'540623', N'540623', NULL, N'5406', 3, N'聂荣县', N'聂荣', N'', N'', N'county', N'', N'active'),
 (N'CN', N'540624', N'540624', NULL, N'5406', 3, N'安多县', N'安多', N'', N'', N'county', N'', N'active'),
 (N'CN', N'540625', N'540625', NULL, N'5406', 3, N'申扎县', N'申扎', N'', N'', N'county', N'', N'active'),
@@ -3073,7 +3073,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'610727', N'610727', NULL, N'6107', 3, N'略阳县', N'略阳', N'', N'', N'county', N'', N'active'),
 (N'CN', N'610728', N'610728', NULL, N'6107', 3, N'镇巴县', N'镇巴', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'610729', N'610729', NULL, N'6107', 3, N'留坝县', N'留坝', N'', N'', N'county', N'', N'active'),
 (N'CN', N'610730', N'610730', NULL, N'6107', 3, N'佛坪县', N'佛坪', N'', N'', N'county', N'', N'active'),
 (N'CN', N'6108', N'610800', NULL, N'61', 2, N'榆林市', N'榆林', N'', N'', N'prefecture_city', N'', N'active'),
@@ -3175,7 +3175,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'621025', N'621025', NULL, N'6210', 3, N'正宁县', N'正宁', N'', N'', N'county', N'', N'active'),
 (N'CN', N'621026', N'621026', NULL, N'6210', 3, N'宁县', N'宁', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'621027', N'621027', NULL, N'6210', 3, N'镇原县', N'镇原', N'', N'', N'county', N'', N'active'),
 (N'CN', N'6211', N'621100', NULL, N'62', 2, N'定西市', N'定西', N'', N'', N'prefecture_city', N'', N'active'),
 (N'CN', N'621102', N'621102', NULL, N'6211', 3, N'安定区', N'安定', N'', N'', N'district', N'', N'active'),
@@ -3277,7 +3277,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'640181', N'640181', NULL, N'6401', 3, N'灵武市', N'灵武', N'', N'', N'county_city', N'', N'active'),
 (N'CN', N'6402', N'640200', NULL, N'64', 2, N'石嘴山市', N'石嘴山', N'', N'', N'prefecture_city', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'640202', N'640202', NULL, N'6402', 3, N'大武口区', N'大武口', N'', N'', N'district', N'', N'active'),
 (N'CN', N'640205', N'640205', NULL, N'6402', 3, N'惠农区', N'惠农', N'', N'', N'district', N'', N'active'),
 (N'CN', N'640221', N'640221', NULL, N'6402', 3, N'平罗县', N'平罗', N'', N'', N'county', N'', N'active'),
@@ -3379,7 +3379,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'CN', N'653224', N'653224', NULL, N'6532', 3, N'洛浦县', N'洛浦', N'', N'', N'county', N'', N'active'),
 (N'CN', N'653225', N'653225', NULL, N'6532', 3, N'策勒县', N'策勒', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'CN', N'653226', N'653226', NULL, N'6532', 3, N'于田县', N'于田', N'', N'', N'county', N'', N'active'),
 (N'CN', N'653227', N'653227', NULL, N'6532', 3, N'民丰县', N'民丰', N'', N'', N'county', N'', N'active'),
 (N'CN', N'6540', N'654000', NULL, N'65', 2, N'伊犁哈萨克自治州', N'伊犁哈萨克', N'', N'', N'autonomous_prefecture', N'', N'active'),
@@ -3481,7 +3481,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'01105', N'011050', NULL, N'01', 2, N'Perry County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'01107', N'011070', NULL, N'01', 2, N'Pickens County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'01109', N'011090', NULL, N'01', 2, N'Pike County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'01111', N'011110', NULL, N'01', 2, N'Randolph County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'01113', N'011130', NULL, N'01', 2, N'Russell County', N'', N'', N'', N'county', N'', N'active'),
@@ -3583,7 +3583,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'05075', N'050750', NULL, N'05', 2, N'Lawrence County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'05077', N'050770', NULL, N'05', 2, N'Lee County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'05079', N'050790', NULL, N'05', 2, N'Lincoln County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'05081', N'050810', NULL, N'05', 2, N'Little River County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'05083', N'050830', NULL, N'05', 2, N'Logan County', N'', N'', N'', N'county', N'', N'active'),
@@ -3685,7 +3685,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'08005', N'080050', NULL, N'08', 2, N'Arapahoe County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'08007', N'080070', NULL, N'08', 2, N'Archuleta County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'08009', N'080090', NULL, N'08', 2, N'Baca County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'08011', N'080110', NULL, N'08', 2, N'Bent County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'08013', N'080130', NULL, N'08', 2, N'Boulder County', N'', N'', N'', N'county', N'', N'active'),
@@ -3787,7 +3787,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'12049', N'120490', NULL, N'12', 2, N'Hardee County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'12051', N'120510', NULL, N'12', 2, N'Hendry County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'12053', N'120530', NULL, N'12', 2, N'Hernando County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'12055', N'120550', NULL, N'12', 2, N'Highlands County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'12057', N'120570', NULL, N'12', 2, N'Hillsborough County', N'', N'', N'', N'county', N'', N'active'),
@@ -3889,7 +3889,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'13113', N'131130', NULL, N'13', 2, N'Fayette County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'13115', N'131150', NULL, N'13', 2, N'Floyd County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'13117', N'131170', NULL, N'13', 2, N'Forsyth County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'13119', N'131190', NULL, N'13', 2, N'Franklin County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'13121', N'131210', NULL, N'13', 2, N'Fulton County', N'', N'', N'', N'county', N'', N'active'),
@@ -3991,7 +3991,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'13315', N'133150', NULL, N'13', 2, N'Wilcox County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'13317', N'133170', NULL, N'13', 2, N'Wilkes County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'13319', N'133190', NULL, N'13', 2, N'Wilkinson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'13321', N'133210', NULL, N'13', 2, N'Worth County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'15', N'150000', N'US-HI', NULL, 1, N'Hawaii', N'', N'', N'夏威夷', N'state', N'HI', N'active'),
@@ -4093,7 +4093,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'17089', N'170890', NULL, N'17', 2, N'Kane County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'17091', N'170910', NULL, N'17', 2, N'Kankakee County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'17093', N'170930', NULL, N'17', 2, N'Kendall County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'17095', N'170950', NULL, N'17', 2, N'Knox County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'17097', N'170970', NULL, N'17', 2, N'Lake County', N'', N'', N'', N'county', N'', N'active'),
@@ -4195,7 +4195,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'18083', N'180830', NULL, N'18', 2, N'Knox County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'18085', N'180850', NULL, N'18', 2, N'Kosciusko County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'18087', N'180870', NULL, N'18', 2, N'LaGrange County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'18089', N'180890', NULL, N'18', 2, N'Lake County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'18091', N'180910', NULL, N'18', 2, N'LaPorte County', N'', N'', N'', N'county', N'', N'active'),
@@ -4297,7 +4297,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'19097', N'190970', NULL, N'19', 2, N'Jackson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'19099', N'190990', NULL, N'19', 2, N'Jasper County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'19101', N'191010', NULL, N'19', 2, N'Jefferson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'19103', N'191030', NULL, N'19', 2, N'Johnson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'19105', N'191050', NULL, N'19', 2, N'Jones County', N'', N'', N'', N'county', N'', N'active'),
@@ -4399,7 +4399,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'20097', N'200970', NULL, N'20', 2, N'Kiowa County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'20099', N'200990', NULL, N'20', 2, N'Labette County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'20101', N'201010', NULL, N'20', 2, N'Lane County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'20103', N'201030', NULL, N'20', 2, N'Leavenworth County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'20105', N'201050', NULL, N'20', 2, N'Lincoln County', N'', N'', N'', N'county', N'', N'active'),
@@ -4501,7 +4501,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'21085', N'210850', NULL, N'21', 2, N'Grayson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'21087', N'210870', NULL, N'21', 2, N'Green County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'21089', N'210890', NULL, N'21', 2, N'Greenup County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'21091', N'210910', NULL, N'21', 2, N'Hancock County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'21093', N'210930', NULL, N'21', 2, N'Hardin County', N'', N'', N'', N'county', N'', N'active'),
@@ -4603,7 +4603,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'22043', N'220430', NULL, N'22', 2, N'Grant Parish', N'', N'', N'', N'parish', N'', N'active'),
 (N'US', N'22045', N'220450', NULL, N'22', 2, N'Iberia Parish', N'', N'', N'', N'parish', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'22047', N'220470', NULL, N'22', 2, N'Iberville Parish', N'', N'', N'', N'parish', N'', N'active'),
 (N'US', N'22049', N'220490', NULL, N'22', 2, N'Jackson Parish', N'', N'', N'', N'parish', N'', N'active'),
 (N'US', N'22051', N'220510', NULL, N'22', 2, N'Jefferson Parish', N'', N'', N'', N'parish', N'', N'active'),
@@ -4705,7 +4705,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'26', N'260000', N'US-MI', NULL, 1, N'Michigan', N'', N'', N'密歇根', N'state', N'MI', N'active'),
 (N'US', N'26001', N'260010', NULL, N'26', 2, N'Alcona County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'26003', N'260030', NULL, N'26', 2, N'Alger County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'26005', N'260050', NULL, N'26', 2, N'Allegan County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'26007', N'260070', NULL, N'26', 2, N'Alpena County', N'', N'', N'', N'county', N'', N'active'),
@@ -4807,7 +4807,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'27031', N'270310', NULL, N'27', 2, N'Cook County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'27033', N'270330', NULL, N'27', 2, N'Cottonwood County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'27035', N'270350', NULL, N'27', 2, N'Crow Wing County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'27037', N'270370', NULL, N'27', 2, N'Dakota County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'27039', N'270390', NULL, N'27', 2, N'Dodge County', N'', N'', N'', N'county', N'', N'active'),
@@ -4909,7 +4909,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'28055', N'280550', NULL, N'28', 2, N'Issaquena County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'28057', N'280570', NULL, N'28', 2, N'Itawamba County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'28059', N'280590', NULL, N'28', 2, N'Jackson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'28061', N'280610', NULL, N'28', 2, N'Jasper County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'28063', N'280630', NULL, N'28', 2, N'Jefferson County', N'', N'', N'', N'county', N'', N'active'),
@@ -5011,7 +5011,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'29089', N'290890', NULL, N'29', 2, N'Howard County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'29091', N'290910', NULL, N'29', 2, N'Howell County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'29093', N'290930', NULL, N'29', 2, N'Iron County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'29095', N'290950', NULL, N'29', 2, N'Jackson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'29097', N'290970', NULL, N'29', 2, N'Jasper County', N'', N'', N'', N'county', N'', N'active'),
@@ -5113,7 +5113,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'30057', N'300570', NULL, N'30', 2, N'Madison County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'30059', N'300590', NULL, N'30', 2, N'Meagher County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'30061', N'300610', NULL, N'30', 2, N'Mineral County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'30063', N'300630', NULL, N'30', 2, N'Missoula County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'30065', N'300650', NULL, N'30', 2, N'Musselshell County', N'', N'', N'', N'county', N'', N'active'),
@@ -5215,7 +5215,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'31143', N'311430', NULL, N'31', 2, N'Polk County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'31145', N'311450', NULL, N'31', 2, N'Red Willow County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'31147', N'311470', NULL, N'31', 2, N'Richardson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'31149', N'311490', NULL, N'31', 2, N'Rock County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'31151', N'311510', NULL, N'31', 2, N'Saline County', N'', N'', N'', N'county', N'', N'active'),
@@ -5317,7 +5317,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'35049', N'350490', NULL, N'35', 2, N'Santa Fe County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'35051', N'350510', NULL, N'35', 2, N'Sierra County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'35053', N'350530', NULL, N'35', 2, N'Socorro County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'35055', N'350550', NULL, N'35', 2, N'Taos County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'35057', N'350570', NULL, N'35', 2, N'Torrance County', N'', N'', N'', N'county', N'', N'active'),
@@ -5419,7 +5419,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'37059', N'370590', NULL, N'37', 2, N'Davie County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'37061', N'370610', NULL, N'37', 2, N'Duplin County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'37063', N'370630', NULL, N'37', 2, N'Durham County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'37065', N'370650', NULL, N'37', 2, N'Edgecombe County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'37067', N'370670', NULL, N'37', 2, N'Forsyth County', N'', N'', N'', N'county', N'', N'active'),
@@ -5521,7 +5521,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'38057', N'380570', NULL, N'38', 2, N'Mercer County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'38059', N'380590', NULL, N'38', 2, N'Morton County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'38061', N'380610', NULL, N'38', 2, N'Mountrail County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'38063', N'380630', NULL, N'38', 2, N'Nelson County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'38065', N'380650', NULL, N'38', 2, N'Oliver County', N'', N'', N'', N'county', N'', N'active'),
@@ -5623,7 +5623,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'39149', N'391490', NULL, N'39', 2, N'Shelby County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'39151', N'391510', NULL, N'39', 2, N'Stark County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'39153', N'391530', NULL, N'39', 2, N'Summit County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'39155', N'391550', NULL, N'39', 2, N'Trumbull County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'39157', N'391570', NULL, N'39', 2, N'Tuscarawas County', N'', N'', N'', N'county', N'', N'active'),
@@ -5725,7 +5725,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'41015', N'410150', NULL, N'41', 2, N'Curry County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'41017', N'410170', NULL, N'41', 2, N'Deschutes County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'41019', N'410190', NULL, N'41', 2, N'Douglas County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'41021', N'410210', NULL, N'41', 2, N'Gilliam County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'41023', N'410230', NULL, N'41', 2, N'Grant County', N'', N'', N'', N'county', N'', N'active'),
@@ -5827,7 +5827,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'44005', N'440050', NULL, N'44', 2, N'Newport County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'44007', N'440070', NULL, N'44', 2, N'Providence County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'44009', N'440090', NULL, N'44', 2, N'Washington County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'45', N'450000', N'US-SC', NULL, 1, N'South Carolina', N'', N'', N'南卡', N'state', N'SC', N'active'),
 (N'US', N'45001', N'450010', NULL, N'45', 2, N'Abbeville County', N'', N'', N'', N'county', N'', N'active'),
@@ -5929,7 +5929,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'46101', N'461010', NULL, N'46', 2, N'Moody County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'46102', N'461020', NULL, N'46', 2, N'Oglala Lakota County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'46103', N'461030', NULL, N'46', 2, N'Pennington County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'46105', N'461050', NULL, N'46', 2, N'Perkins County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'46107', N'461070', NULL, N'46', 2, N'Potter County', N'', N'', N'', N'county', N'', N'active'),
@@ -6031,7 +6031,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'47165', N'471650', NULL, N'47', 2, N'Sumner County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'47167', N'471670', NULL, N'47', 2, N'Tipton County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'47169', N'471690', NULL, N'47', 2, N'Trousdale County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'47171', N'471710', NULL, N'47', 2, N'Unicoi County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'47173', N'471730', NULL, N'47', 2, N'Union County', N'', N'', N'', N'county', N'', N'active'),
@@ -6133,7 +6133,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'48173', N'481730', NULL, N'48', 2, N'Glasscock County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48175', N'481750', NULL, N'48', 2, N'Goliad County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'48177', N'481770', NULL, N'48', 2, N'Gonzales County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48179', N'481790', NULL, N'48', 2, N'Gray County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48181', N'481810', NULL, N'48', 2, N'Grayson County', N'', N'', N'', N'county', N'', N'active'),
@@ -6235,7 +6235,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'48373', N'483730', NULL, N'48', 2, N'Polk County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48375', N'483750', NULL, N'48', 2, N'Potter County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'48377', N'483770', NULL, N'48', 2, N'Presidio County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48379', N'483790', NULL, N'48', 2, N'Rains County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'48381', N'483810', NULL, N'48', 2, N'Randall County', N'', N'', N'', N'county', N'', N'active'),
@@ -6337,7 +6337,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'50003', N'500030', NULL, N'50', 2, N'Bennington County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'50005', N'500050', NULL, N'50', 2, N'Caledonia County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'50007', N'500070', NULL, N'50', 2, N'Chittenden County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'50009', N'500090', NULL, N'50', 2, N'Essex County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'50011', N'500110', NULL, N'50', 2, N'Franklin County', N'', N'', N'', N'county', N'', N'active'),
@@ -6439,7 +6439,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'51181', N'511810', NULL, N'51', 2, N'Surry County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'51183', N'511830', NULL, N'51', 2, N'Sussex County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'51185', N'511850', NULL, N'51', 2, N'Tazewell County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'51187', N'511870', NULL, N'51', 2, N'Warren County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'51191', N'511910', NULL, N'51', 2, N'Washington County', N'', N'', N'', N'county', N'', N'active'),
@@ -6541,7 +6541,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'54025', N'540250', NULL, N'54', 2, N'Greenbrier County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'54027', N'540270', NULL, N'54', 2, N'Hampshire County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'54029', N'540290', NULL, N'54', 2, N'Hancock County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'54031', N'540310', NULL, N'54', 2, N'Hardy County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'54033', N'540330', NULL, N'54', 2, N'Harrison County', N'', N'', N'', N'county', N'', N'active'),
@@ -6643,7 +6643,7 @@ INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth
 (N'US', N'55111', N'551110', NULL, N'55', 2, N'Sauk County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'55113', N'551130', NULL, N'55', 2, N'Sawyer County', N'', N'', N'', N'county', N'', N'active');
 
-INSERT INTO dbo.geo_division (country, code, code6, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
+INSERT INTO dbo.geo_division (country, code, sort_key, code_iso, parent_code, depth, name_local, name_local_short, name_en, name_zh, type, abbrev, status) VALUES
 (N'US', N'55115', N'551150', NULL, N'55', 2, N'Shawano County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'55117', N'551170', NULL, N'55', 2, N'Sheboygan County', N'', N'', N'', N'county', N'', N'active'),
 (N'US', N'55119', N'551190', NULL, N'55', 2, N'Taylor County', N'', N'', N'', N'county', N'', N'active'),
