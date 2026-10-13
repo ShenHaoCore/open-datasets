@@ -7,7 +7,9 @@
 
 | 数据集 | 内容 | 规模 | 上游 | 数据许可 |
 |---|---|---|---|---|
-| [country-phone](datasets/country-phone/) | 国家/地区电话区号、中英文名、ISO 码、国旗图标 | 244 条 · 263 张国旗 · 约 1.1 MB | `intl-tel-input` 23.0.4 + `world-countries` 5.1.0 | MIT / ODbL-1.0（详见数据集说明） |
+| [countries](datasets/countries/) | 国家主数据（ISO/首都/区域/坐标/货币/语言等）+ 电话区号 + 准确国旗 SVG | 244 条 · 244 张 SVG | `intl-tel-input` + `countries`（npm: world-countries）+ `svg-country-flags`（`AC` 补自 flag-icons） | MIT / ODbL-1.0（详见数据集说明） |
+| [cn-divisions](datasets/cn-divisions/) | 中国省/地级/区县自连表：区划代码、上级、层级、中英文名（省级）、类型 | 3345 条（34 省 + 365 地级 + 2946 区县） | GB/T 2260 + ISO 3166-2:CN + china-division 2.7.0 | 公开标准事实 / MIT（详见数据集说明） |
+| [us-divisions](datasets/us-divisions/) | 美国州+县自连表：FIPS、上级、层级、中英文名/首府（州级）、类型 | 3193 条（51 州 + 3142 县） | states.source + Census national_county2020 | 公开标准事实（详见数据集说明） |
 
 ## 目录约定
 
@@ -30,8 +32,14 @@ datasets/<数据集名>/
 按 raw 链接取用（`main` 换成具体 tag / commit 可锁定版本）：
 
 ```
-https://raw.githubusercontent.com/ShenHaoCore/open-datasets/main/datasets/country-phone/countries.json
-https://cdn.jsdelivr.net/gh/ShenHaoCore/open-datasets@main/datasets/country-phone/countries.json
+https://raw.githubusercontent.com/ShenHaoCore/open-datasets/main/datasets/countries/countries.json
+https://cdn.jsdelivr.net/gh/ShenHaoCore/open-datasets@main/datasets/countries/countries.json
+
+https://raw.githubusercontent.com/ShenHaoCore/open-datasets/main/datasets/cn-divisions/divisions.json
+https://cdn.jsdelivr.net/gh/ShenHaoCore/open-datasets@main/datasets/cn-divisions/divisions.json
+
+https://raw.githubusercontent.com/ShenHaoCore/open-datasets/main/datasets/us-divisions/divisions.json
+https://cdn.jsdelivr.net/gh/ShenHaoCore/open-datasets@main/datasets/us-divisions/divisions.json
 ```
 
 ## 许可

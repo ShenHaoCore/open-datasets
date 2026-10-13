@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>国家数据 + 电话区号 + 国旗</title>
+<style>
+  :root{
+    --bg:#ffffff; --panel:#f7f8fa; --border:#e3e5e8; --text:#1a1d21;
+    --muted:#6b7280; --accent:#2563eb; --accent-soft:#eff4ff; --hover:#f2f4f7;
+    --radius:10px; --shadow:0 8px 28px rgba(16,24,40,.12);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 20px 64px; background:var(--panel); color:var(--text);
+    font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  h1{font-size:22px;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 24px}
+  .card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px}
+  .stats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:20px}
+  .stat b{display:block;font-size:20px;line-height:1.2}
+  .stat span{color:var(--muted);font-size:12px}
+
+  /* ---- 手机号输入框 ---- */
+  .field{position:relative;display:flex;align-items:center;gap:0;
+    border:1px solid var(--border);border-radius:var(--radius);background:#fff;
+    transition:border-color .15s, box-shadow .15s}
+  .field:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .cc-btn{display:flex;align-items:center;gap:8px;padding:12px 10px 12px 14px;flex:none;
+    border:0;background:transparent;cursor:pointer;border-radius:var(--radius) 0 0 var(--radius);
+    font:inherit;color:inherit;white-space:nowrap}
+  .cc-btn:hover{background:var(--hover)}
+  /* 区号最长 +xxx（4 字符），固定宽度避免切换国家时按钮抖动 */
+  .cc-btn #curCode{width:3.5em;font-variant-numeric:tabular-nums;text-align:left}
+  .cc-btn .caret{width:0;height:0;border:4px solid transparent;border-top-color:var(--muted);margin-left:2px;flex:none}
+  .field .divider{width:1px;height:22px;background:var(--border)}
+  .field input{flex:1;border:0;outline:0;padding:12px 14px;font:inherit;background:transparent;min-width:0}
+  .flag{display:inline-block;width:20px;height:15px;background-size:contain;background-repeat:no-repeat;background-position:center;border-radius:2px;flex:none}
+  .flag.lg{width:24px;height:18px}
+
+  /* ---- 下拉面板 ---- */
+  .drop{position:absolute;top:calc(100% + 6px);left:0;width:min(420px,100%);z-index:30;
+    background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+    overflow:hidden;display:none}
+  .drop.open{display:block}
+  .drop .search{padding:10px;border-bottom:1px solid var(--border)}
+  .drop input{width:100%;border:1px solid var(--border);border-radius:7px;padding:8px 10px;font:inherit;outline:0}
+  .drop input:focus{border-color:var(--accent)}
+  .list{max-height:308px;overflow:auto;margin:0;padding:4px;list-style:none}
+  .list li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:7px;cursor:pointer}
+  .list li:hover,.list li.active{background:var(--hover)}
+  .list li[aria-selected="true"]{background:var(--accent-soft)}
+  .list .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .list .en{color:var(--muted);font-size:12px;margin-left:6px}
+  .list .dc{color:var(--muted);font-variant-numeric:tabular-nums}
+  .list .none{padding:16px;text-align:center;color:var(--muted)}
+  .hint{margin-top:10px;color:var(--muted);font-size:12px}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+  th{color:var(--muted);font-weight:500;font-size:12px}
+  code{background:var(--panel);padding:1px 5px;border-radius:4px;font-size:12px}
+  table .mono{font-variant-numeric:tabular-nums;color:var(--muted)}
+  table .flag{
+    width:28px;height:18px;background-color:#eef0f3;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>国家数据 + 电话区号 + 国旗</h1>
+  <p class="sub">
+    主数据来自 <code>countries</code>（npm: world-countries）；区号口径同 <code>intl-tel-input</code> / <code>libphonenumber</code>（ITU-T E.164）。
+    国旗为本地准确 SVG，<strong>不依赖 emoji</strong>——Windows 下 Regional Indicator 不会渲染成旗帜。
+  </p>
+
+  <div class="stats">
+    <div class="stat"><b id="s-count">–</b><span>国家 / 地区</span></div>
+    <div class="stat"><b id="s-flag">–</b><span>国旗图（本地）</span></div>
+    <div class="stat"><b id="s-share">–</b><span>共享同一区号</span></div>
+  </div>
+
+  <div class="card">
+    <div class="field" id="field">
+      <button class="cc-btn" id="ccBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span class="flag" id="curFlag"></span>
+        <span id="curCode">+86</span>
+        <i class="caret"></i>
+      </button>
+      <span class="divider"></span>
+      <input id="phone" type="tel" inputmode="tel" placeholder="手机号" value="138 0000 0000">
+      <div class="drop" id="drop" role="listbox" aria-label="选择国家或地区">
+        <div class="search"><input id="q" type="text" placeholder="搜索：中国 / China / CN / 86" autocomplete="off"></div>
+        <ul class="list" id="list"></ul>
+      </div>
+    </div>
+    <p class="hint">点左侧按钮展开列表，支持按中文名、英文名、ISO 码或区号搜索；↑↓ 选择，Enter 确认，Esc 关闭。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:15px">数据预览（前 12 条，按常用优先级排序）</h3>
+    <table>
+      <thead><tr><th>国旗</th><th>国家 / 地区</th><th>ISO</th><th>区号</th></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <p class="hint" style="margin-top:24px;line-height:1.8">
+    数据来源：<code>intl-tel-input</code> 23.0.4（MIT）· <code>countries</code> 5.1.0（ODbL-1.0，npm: world-countries）·
+    <code>svg-country-flags</code> 1.2.10（准确国旗 SVG）· <code>flag-icons</code> 7.5.0（仅 AC）。
+    字段说明与重建方法见 <a href="./README.md" style="color:var(--accent)">README</a>；
+    港澳台按中国官方口径标注。
+  </p>
+</div>
+
+<script src="countries.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

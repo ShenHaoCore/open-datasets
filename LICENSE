@@ -23,5 +23,5 @@ SOFTWARE.
 ---
 
 注意：本许可只覆盖本仓库的**生成脚本与文档**。
-各数据集的**数据**许可随上游（如 country-phone 为 MIT + ODbL-1.0），
+各数据集的**数据**许可随上游（如 countries 为 MIT + ODbL-1.0），
 详见 datasets/<名称>/README.md 与 THIRD-PARTY.md。

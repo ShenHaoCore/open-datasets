@@ -1,0 +1,12 @@
+{
+  "name": "countries-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "countries 数据集的上游依赖（版本锁定，改动需同步 dataset README）",
+  "license": "MIT",
+  "dependencies": {
+    "intl-tel-input": "23.0.4",
+    "svg-country-flags": "1.2.10",
+    "world-countries": "5.1.0"
+  }
+}

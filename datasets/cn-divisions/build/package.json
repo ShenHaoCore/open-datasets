@@ -1,0 +1,10 @@
+{
+  "name": "cn-divisions-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "cn-divisions 数据集的上游依赖（版本锁定，改动需同步 dataset README）",
+  "license": "MIT",
+  "dependencies": {
+    "china-division": "2.7.0"
+  }
+}

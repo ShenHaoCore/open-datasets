@@ -1,0 +1,6 @@
+# 依赖与构建中间产物
+node_modules/
+upstream.json
+.upstream/
+__pycache__/
+tmp-*/

@@ -5,6 +5,13 @@
 *.sh             text eol=lf
 *.py             text eol=lf
 *.mjs            text eol=lf
+*.sql            text eol=lf
+
+# ── 迁移脚本例外：MSSQL 侧刻意用 CRLF **且必须保留 UTF-8 BOM**。
+#    ODBC 版 sqlcmd 用 -i 读文件时按系统 ACP 解码，不带 BOM 的中文会被静默丢弃
+#    （exit 0、无消息、零落库）；BOM 是文件内容而非行尾，text 属性不会动它，
+#    这里只需另指定 eol，规则放在上面 `*.sql` 之后生效。
+schema/geo_division/mssql/*.sql   text eol=crlf
 
 # ── 数据产物刻意使用 CRLF（Excel / Windows 友好），必须禁止任何 EOL 归一化，
 #    这样在 Windows / Linux / macOS 上 clone 出来都逐字节一致，
@@ -13,6 +20,9 @@
 datasets/*/countries.json   -text
 datasets/*/countries.csv    -text
 datasets/*/countries.js     -text
-datasets/*/flags.css        -text
+datasets/*/divisions.json   -text
+datasets/*/divisions.csv    -text
+datasets/*/divisions.js     -text
 
-# ── PNG 等二进制交给 text=auto 自动判定，不额外声明
+# ── 国旗 SVG：按上游原样入库，禁止 EOL 归一化，保证 --check 跨平台逐字节一致
+datasets/*/flags/*.svg      -text
